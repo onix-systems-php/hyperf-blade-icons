@@ -3,6 +3,10 @@
     "description": "An easy way inline SVG images in your Blade templates.",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf"
+    ],
     "authors": [
         {
             "name": "tabuna",
