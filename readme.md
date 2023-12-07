@@ -18,24 +18,32 @@ Publish anonymization config:
 php bin/hyperf.php vendor:publish onix-systems-php/blade-icons
 ```
 
+Add to `config/autoload/view.php`
+
+```php
+'components' => [
+    'hyperf-icon' => \OnixSystemsPHP\HyperfIcons\Component\IconComponent::class,
+],
+```
+
 When calling the directory method with the first argument, we pass the prefix to call our icons and the second argument is the directory where they are located.
 
 After that, we can call the component in our blade templates:
 
 ```blade
-<x-orchid-icon path="fa.home" />
+<x-hyperf-icon path="fa.home" />
 ```
 
 If you use one or two sets of icons that do not repeat, then it is not necessary to specify a prefix in the component:
 
 ```blade
-<x-orchid-icon path="home" />
+<x-hyperf-icon path="home" />
 ```
 
 You can also list some attributes that should be applied to your icon:
 
 ```blade
-<x-orchid-icon 
+<x-hyperf-icon 
     path="home" 
     class="icon-big" 
     width="2em" 
