@@ -1,0 +1,45 @@
+{
+    "name": "onix-systems-php/blade-icons",
+    "description": "An easy way inline SVG images in your Blade templates.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tabuna",
+            "email": "bliz48rus@gmail.com"
+        },
+        {
+            "name": "Alex Syvolap",
+            "email": "oleksandr.syvolap@onix-systems.com"
+        }
+    ],
+    "require": {
+        "ext-dom": "*",
+        "hyperf/collection": "^3.1",
+        "hyperf/view-engine": "^3.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^10.5",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "OnixSystemsPHP\\HyperfIcons\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OnixSystemsPHP\\HyperfIcons\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+      "hyperf": {
+        "config": "OnixSystemsPHP\\HyperfIcons\\ConfigProvider"
+      }
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --colors=always",
+        "cs-fix": "php-cs-fixer fix $1"
+    }
+}
