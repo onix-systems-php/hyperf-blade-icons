@@ -1,4 +1,4 @@
-# Inline SVG Icons for Laravel Blade
+# Inline SVG Icons for Hyperf Blade
 
 Implements [orchidsoftware/blade-icons](https://github.com/orchidsoftware/blade-icons) for Hyperf.
 
