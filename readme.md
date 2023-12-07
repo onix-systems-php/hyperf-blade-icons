@@ -12,7 +12,7 @@ $ composer require onix-systems-php/blade-icons
 
 ## Basic Usage
 
-Publish anonymization config:
+Publish config:
 
 ```shell script
 php bin/hyperf.php vendor:publish onix-systems-php/blade-icons
